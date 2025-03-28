@@ -1,0 +1,392 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    z-index: 1000;
+    
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* style logo */
+.logo {
+    font-size: 24px;
+    color: #333;
+}
+
+.logo .tracker {
+    font-weight: bold;
+    color:burlywood;
+}
+
+/* style navigation */
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin: 0 20px;
+    transition: 0.7s ease;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navigation a:hover {
+    color: burlywood;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    
+
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #ccc;
+}
+
+/* style home page */
+img{
+    margin-left: 50%;
+    margin-top: 100px;
+}
+
+.empower{
+    margin-top: -490px;
+    margin-left: 80px;
+    font-weight: bolder;
+    font-size: 2.3em;
+}
+
+
+.text-container{
+    line-height: 2.3;
+    margin-left: 90px;
+    font-size: 1em;
+}
+
+.connect-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: burlywood;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.connect-btn:hover {
+    background-color: #d19b55;
+}
+
+
+
+/* stlye about page */
+.text-container2{
+    line-height: 2.3;
+    margin-left: 55%;
+}
+
+.empower2{
+    margin-top: -590px;
+    margin-left: 55%;
+    font-weight: bolder;
+}
+
+.img2{
+    margin-right: 90%;
+    margin-top: 60px;
+}
+
+
+
+
+
+/* styling portfolio page */
+#portfolio {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Ensure background color is solid */
+    margin: 0 auto; /* Center section if needed */
+    font-weight: bolder; /* This may affect text appearance */
+    margin-top: 190px;
+    margin-left: 80px;
+    font-weight: bolder;
+}
+
+.section-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    
+}
+
+.skill {
+    background-color: #fff;
+    border-radius: 45px; /* Increase radius for a smoother appearance */
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.skill p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+
+/* contact styling page */
+
+.contact-section {
+    background-color: white;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 55%;
+    margin-top: -590px;
+}
+
+.cont {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    margin-left: 15%;
+    margin-top: -590px;
+}
+
+.contact-info a {
+    display: block;
+    font-size: 1rem;
+    color: #0073b1;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.img4{
+    margin-right: 90%;
+    margin-top: 60px;
+    margin-bottom: 180px;
+}
+
+
+/* service page */
+.view-container{
+    margin-top: 120px;
+    margin-left: 24%;
+}
+
+/* FOOTER */
+
+.footer-content {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    color:black;
+}
+
+
+
+
+    @media (max-width: 768px) {
+        header {
+            display: flex;
+            position: absolute;
+            position: fixed;
+        }
+    
+         .hamburger {
+            display: block;
+            size: 20;
+            color: #fff;
+            
+        }
+        .hamburger.active.bar:nth-child(2){
+            opacity: 0;
+
+        }
+        .hamburger.active.bar:nth-child(1){
+        transform: translate(8px) rotate(45deg);
+
+        }
+        .hamburger.active.bar:nth-child(3){
+            transform: translate(-8px) rotate(-45deg);
+    
+            }
+         
+     
+
+        .navigation ul {
+            flex-direction: column;
+            justify-content: center;
+             align-items: center; 
+             width: 100%;
+             height: 100vh;
+             background:transparent;
+             position: absolute;
+             top:70px;
+             gap: 0;
+             transition: 0.3s;
+             left:-100%;
+             z-index: -3;
+        }
+
+         .navigation li{
+           padding: 1rem 0;
+        }
+    
+         .navigation li a{
+            font-size: 2rem;
+        }
+    
+        
+        img {
+            margin-left: 0;
+            width: 50%; /* Full width for small screens */
+            margin-top: 50px;
+        }
+    
+        .empower {
+            margin-top: 20px;
+            margin-left: 0;
+            font-size: 1.8em; /* Smaller font size for small screens */
+            text-align: center; /* Center text on small screens */
+        }
+    
+        .text-container {
+            margin-left: 0;
+            text-align: start;
+            font-size: 0.em;
+            padding: 0 10px; /* Add padding for better readability */
+            text-align: start; /* Center text on small screens */
+            margin-right: -52px;
+        }
+    
+        .connect-btn {
+            margin: 20px auto; /* Center button */
+            display: block; /* Ensure button is displayed as block element */
+        }
+    
+        /* About page*/
+        .text-container2 {
+            margin-left: 0;
+            padding: 0 10px;
+            text-align: start;
+        }
+    
+        .empower2 {
+            margin-top: 20px;
+            margin-left: 0;
+            font-size: 1.8em;
+            text-align: center;
+        }
+    
+        .img2 {
+            margin: 20px auto;
+            width: 100%;
+            display: block;
+        }
+
+        /* contact page */
+
+        .container {
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-left: 0;
+            text-align: center;
+        }
+    
+        .cont {
+            font-size: 1.5rem;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    
+        .contact-info a {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+    
+        .img4 {
+            margin: 20px auto;
+            width: 100%;
+            display: block;
+        }
+
+        .view-container{
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-left: 0;
+            text-align: center;
+        }
+        #portfolio{
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+   
